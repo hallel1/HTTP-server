@@ -1,0 +1,43 @@
+
+Name: Hallel Davidian
+
+Name of the exercise: Ex3 - HTTP server
+-----------------------------------------------------
+the submitted file:
+
+#server.c-
+	This file implement a HTTP server 
+	this server constructs an HTTP response based on client's request and sends the response to the client. 
+	
+
+	the list of the methods which the program uses:
+	1.the function  - handle_input:..........Disassembles the request and decides if the request is valid or need to out error msg
+	2.the function  - handle_error:..........Creates html for error msg
+	3.the function  - create_conectOk:.......Creates conect of valid request
+	4.the function  - create_conect:.........Creates conect of no valid request
+	5.the function  - numDigits:.............Count the number of digits
+	6.the function  - readInput:.............The function to which the threads arrive, read the buffer input, and call to the function that handle input
+	7.the function  - errorMsg:..............print msg error for function that failed before the accept.
+	8.the function  - error500:..............print msg error for function that failed after the accept.
+	9.the function  - errorInput:............input error.
+	10.the function - read_dir_content:......print the dir Items 
+	11.the function - chackIfPermissions:....check permissions- return 1 if there is permissions in path
+	12.the function - readFromFile:..........read from file and write to the newsockfd
+	13.the function - isDirectory:...........check if path is a Directory, return non-zero if yes, else return 0
+	14.the function - strToInteger:..........converter str to integer 
+	15.the function - get_mime_type:.........Checking the file type
+	
+
+#threadpool.c-
+This file include implementation of the methods from the header file, 
+	  and private methods - error,called destroy and queue_dequeue.
+	  1.the function  - queue_dequeue:....dequeue the first element in the queue
+	  2.the function  - destroy:..........destroy the threadpool
+	  3.the function  - error:............print error msg and exit.
+	  
+	  
+#README - Description about the exercise
+
+
+-----------------------------------------------------
+
